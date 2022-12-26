@@ -1,3 +1,5 @@
+/* Typography */
+
 html{
     font-size: 62.5%;
 }
@@ -5,4 +7,52 @@ html{
 body{
     margin: 0;
     font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+/* navigation bar */
+.nav{
+    padding: 1.8rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.nav__firstHalf, .nav__secondHalf{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__firstHalf a{
+    color: black;
+    text-decoration: none;
+}
+
+.nav__firstHalf a:hover{
+    text-decoration: underline;
+}
+
+.nav__firstHalf a:last-child{
+    margin: 0 2rem;
+}
+
+/* Icon */
+.icon-container{
+    
+}
+
+.icon{
+    width: 25px;
+    height: 25px;
+    margin-right: 2rem;
+    margin-left: 1rem;
+}
+
+/* Avata */
+.avata{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
 }

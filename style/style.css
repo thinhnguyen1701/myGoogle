@@ -1,16 +1,16 @@
 /* Typography */
 
-html{
+html {
     font-size: 62.5%;
 }
 
-body{
+body {
     margin: 0;
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 /* navigation bar */
-.nav{
+.nav {
     padding: 1.8rem 1rem;
     display: flex;
     flex-direction: row;
@@ -19,40 +19,67 @@ body{
     font-size: 1.4rem;
 }
 
-.nav__firstHalf, .nav__secondHalf{
+.nav__firstHalf,
+.nav__secondHalf {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.nav__firstHalf a{
+.nav__firstHalf a {
     color: black;
     text-decoration: none;
 }
 
-.nav__firstHalf a:hover{
+.nav__firstHalf a:hover {
     text-decoration: underline;
 }
 
-.nav__firstHalf a:last-child{
+.nav__firstHalf a:last-child {
     margin: 0 2rem;
 }
 
 /* Icon */
-.icon-container{
-    
+.icon-container {
+    align-items: center;
+    border-radius: 100%;
+    cursor: pointer;
+    display: inline-flex;
+    height: 45px;
+    justify-content: center;
+    margin-right: 1.3rem;
+    width: 45px;
 }
 
-.icon{
+.icon-container:hover {
+    background: lightgrey;
+}
+
+.icon {
     width: 25px;
     height: 25px;
-    margin-right: 2rem;
-    margin-left: 1rem;
+
 }
 
 /* Avata */
-.avata{
+.avata-container{
+    align-items: center;
+    border-radius: 100%;
+    cursor: pointer;
+    display: inline-flex;
+    height: 50px;
+    justify-content: center;
+    width: 50px;
+}
+
+.avata-container:hover{
+    background: lightgrey;
+}
+
+.avata {
     width: 40px;
     height: 40px;
     border-radius: 100%;
 }
+
+/* logo */

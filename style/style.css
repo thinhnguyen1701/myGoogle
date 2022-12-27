@@ -58,7 +58,6 @@ body {
 .icon {
     width: 25px;
     height: 25px;
-
 }
 
 /* Avata */
@@ -91,4 +90,36 @@ body {
 .logo__image{
     width: 100%;
     max-width: 500px;
+}
+
+/* input */
+.input{
+    outline: 0;
+    font-size: 1.6rem;
+    margin: 0 .5rem 0 2rem;
+    flex-grow: 1;
+    border: 0;
+}
+.input-group{
+    width: 100%;
+    display: flex;
+    border: 1px solid lightgrey;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    box-shadow: 0 0 10px 0 lightgrey;
+    align-items: center;
+}
+
+.input-group__loupe-icon{
+    fill: lightgreen;
+}
+
+.input-group__loupe-icon{
+    width: 2rem;
+    height: 2rem;
+}
+
+.input-group__google-mic{
+    width: 4rem;
+    height: 4rem;
 }

@@ -83,3 +83,12 @@ body {
 }
 
 /* logo */
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.logo__image{
+    width: 100%;
+    max-width: 500px;
+}

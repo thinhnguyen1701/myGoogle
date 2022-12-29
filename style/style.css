@@ -87,7 +87,7 @@ a{
 .input-group{
     padding: 14px 20px;
     display: flex;
-    max-width: 337px;
+    width: 100%;
     border-radius: 30px;
     box-shadow: 0 0 10px 0 lightgrey;
     align-items: center;
@@ -101,7 +101,7 @@ a{
     align-self: flex-end;
 }
 
-@media screen and (min-width: 560px){
+/* @media screen and (min-width: 560px){
     .input-group{
         max-width: 450px;
     }
@@ -111,11 +111,51 @@ a{
     .input-group{
         max-width: 562px;
     }
+} */
+
+/* container */
+.container{
+    max-width: 337px;
+    display: flex;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 560px){
+    .container{
+        max-width: 450px;
+    }
+}
+
+@media screen and (min-width: 672px){
+    .container{
+        max-width: 562px;
+    }
 }
 
 /* grid */
-.grid-2x3{
+.grid{
     display: grid;
+}
+
+.grid-1x3{
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+}
+
+@media screen and (min-width: 560px){
+    .grid-1x4{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (min-width: 672px){
+    .grid-1x5{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+/* logo */
+.logo{
+    width: 100%;
+    max-width: 500px;
+    justify-self: center;
 }

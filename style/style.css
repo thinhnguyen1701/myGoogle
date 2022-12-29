@@ -9,9 +9,11 @@ html {
 }
 
 body {
+    height: 100vh;
     margin: 0;
     font-family: Roboto, Arial, Helvetica, sans-serif;
     font-size: 1.3rem;
+    position: relative;
 }
 
 a{
@@ -85,6 +87,7 @@ a{
 
 /* input */
 .input-group{
+    max-width: 375px;
     padding: 14px 20px;
     display: flex;
     border-radius: 30px;
@@ -94,13 +97,13 @@ a{
 
 .input-group .input{
     flex-grow: 1;
-    margin-left: 1rem;
+    margin-left: 15px;
     border: 0;
     outline: 0;
     align-self: flex-end;
 }
 
-/* @media screen and (min-width: 560px){
+@media screen and (min-width: 560px){
     .input-group{
         max-width: 450px;
     }
@@ -110,7 +113,7 @@ a{
     .input-group{
         max-width: 562px;
     }
-} */
+}
 
 /* container */
 .container{
@@ -120,7 +123,7 @@ a{
     margin: 0 auto;
 }
 
-@media screen and (min-width: 560px){
+@media screen and (min-width: 552px){
     .container{
         max-width: 450px;
     }
@@ -141,7 +144,7 @@ a{
     grid-template-columns: repeat(3, 1fr);
 }
 
-@media screen and (min-width: 560px){
+@media screen and (min-width: 552px){
     .grid-1x4{
         grid-template-columns: repeat(4, 1fr);
     }
@@ -208,4 +211,53 @@ a{
 
 .right-list .icon-container:hover{
     background: rgba(241, 243, 244, 1);
+}
+
+/* footer */
+.footer{
+    height: 100%;
+}
+
+/* button */
+.btn{
+    align-items: center;
+    background: white;
+    border-radius: 100%;
+    border: 0;
+    bottom: 20px;
+    box-shadow: 0 0 5px 0 lightgrey;
+    cursor: pointer;
+    display: flex;
+    height: 35px;
+    justify-content: center;
+    padding: 0;
+    position: absolute;
+    right: 10px;
+    width: 35px;
+}
+
+.btn:hover{
+    background-color: rgb(238, 238, 238);
+}
+
+.btn .icon{
+    width: 15px;
+    height: 15px;
+}
+
+@media screen and (min-width: 552px){
+    .btn{
+        width: auto;
+        height: auto;
+        border-radius: 30px;
+        padding: 10px 20px;
+    }
+
+    .btn .icon{
+        margin-right: 10px;
+    }
+    .btn::after{
+        content: 'Customize Chrome';
+        color: #1a73e8;
+    }
 }
